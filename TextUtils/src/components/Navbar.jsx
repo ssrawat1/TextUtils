@@ -18,7 +18,7 @@ const Navbar = ({heading,mode,toggleMode}) => {
       </ul>
       <div className={`form-check form-switch text-${mode==='light'?'dark':'light'} `}>
         <input className="form-check-input" onClick = {toggleMode}type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-       <label className="form-check-label text-mode==='light'?'black':'white" htmlFor="flexSwitchCheckDefault">{mode==='light'?'Enable Dark Mode':'Enable Light Mode'}</label>
+       <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{mode==='light'?'Enable Dark Mode':'Enable Light Mode'}</label>
      </div>
     </div>
   </div>

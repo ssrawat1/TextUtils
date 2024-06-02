@@ -23,7 +23,7 @@ const App = () => {
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
-      showAlert("Light mode has been ebabled", "success");
+      showAlert("Light mode has been enabled", "success");
     }
   };
 

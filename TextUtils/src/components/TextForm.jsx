@@ -36,7 +36,7 @@ const TextForm = ({ heading, mode, showAlert }) => {
     }
 
     const capitalizeFirstLetterOfWords = () => {
-        let newText = text.trim().replace(/\s+/g, " ").split(' ').filter((word) => word !== "").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        let newText = text.trim().replace(/\s+/g, " ").split(' ').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         setText(newText);
         showAlert('First character of each word capitalized.', 'success');
     }

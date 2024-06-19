@@ -50,7 +50,7 @@ const TextForm = ({ heading, mode, showAlert }) => {
         <>
             <h2 className="my-3" style={{ color: mode === 'light' ? 'black' : 'white' }}>{heading}</h2>
             <div className="mb-3 my-3">
-                <textarea className="form-control" id="textArea" rows="9" value={text} onChange={handleTextChange} style={{ backgroundColor: mode === 'light' ? 'white' : '#13466e', color: mode === 'light' ? '#042743' : 'white' }}></textarea>
+                <textarea className="form-control" id="textArea" rows="9" value={text} onChange={handleTextChange} style={{ backgroundColor: mode === 'light' ? '#e3f2fd' : '#13466e', color: mode === 'light' ? '#042743' : 'white' }}></textarea>
             </div>
             <button onClick={convertToUpperCase} type="button" className="btn btn-primary mx-2" style={{ backgroundColor: '#007bff', borderColor: '#007bff' }}>
                 Convert to Uppercase
